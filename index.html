@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Compass Chart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="compass" class="compass">
+        <div class="label top">Strong IRL</div>
+        <div class="label bottom">Weak IRL</div>
+        <div class="label left">Good at games</div>
+        <div class="label right">Bad at games</div>
+        <div class="grid">
+            <div class="quadrant top-left"></div>
+            <div class="quadrant top-right"></div>
+            <div class="quadrant bottom-left"></div>
+            <div class="quadrant bottom-right"></div>
+        </div>
+    </div>
+    <div id="current-turn">
+        Current Turn: <span id="current-player"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
