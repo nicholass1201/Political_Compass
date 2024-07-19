@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+adocument.addEventListener("DOMContentLoaded", () => {
     const compass = document.getElementById("compass");
     const goBackButton = document.getElementById("go-back");
     const images = {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         markers.push(marker);
 
         playerIndex++;
-        currentPlayerElement.textContent = players[playerIndex] || "All players have placed their markers";
+        currentPlayerElement.textContent = players[playerIndex] || "Completely Unbiased And Based";
         goBackButton.disabled = playerIndex === 0 || playerIndex > players.length;
     });
 
