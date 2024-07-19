@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Check if the click was on a label
         if (event.target.classList.contains('label')) return;
 
-        if (playerIndex >= players.length) return;  // Stop if all players have placed their markers
+        if (playerIndex >= players.length) return;
 
         const rect = compass.getBoundingClientRect();
         const x = event.clientX - rect.left;
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const labels = document.querySelectorAll('.label');
     labels.forEach(label => {
         label.addEventListener('click', (event) => {
-            event.stopPropagation(); // Prevent the event from propagating to the compass click handler
+            event.stopPropagation();
             const newText = prompt('Enter new text:', label.textContent);
             if (newText !== null) {
                 label.textContent = newText;
