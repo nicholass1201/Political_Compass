@@ -19,6 +19,8 @@ body {
     position: absolute;
     font-size: 1.2em;
     font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .label.top {
@@ -35,14 +37,18 @@ body {
 
 .label.left {
     top: 50%;
-    left: -8em;
-    transform: translateY(-50%);
+    left: -4em;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 .label.right {
     top: 50%;
-    right: -7em;
-    transform: translateY(-50%);
+    right: -4em;
+    transform: translate(50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 .grid {
@@ -81,6 +87,13 @@ body {
 }
 
 #current-turn {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 1.5em;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
 }
